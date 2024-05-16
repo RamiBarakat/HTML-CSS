@@ -1,0 +1,61 @@
+/* can call base.css from here */
+@import './base.css';
+
+.nav ul{
+    display: flex;
+    gap: 16px
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1.6474391222000122px 8.23719596862793px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.header .logo{
+    
+    display: flex;
+    align-items: center;
+    gap: 10px
+
+}
+
+
+.header .logo img{
+    width: 35px;
+}
+
+.header .nav a{
+    color: #101928;
+}
+
+.header .logo a{
+    color:var(--mainColor);
+}
+
+.header .auth a{
+    font-family:var(--subFont);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.header .auth a:first-of-type{
+    border: 1px solid var(--mainColor);
+    
+    color: var(--mainColor)
+    
+}
+
+.header .auth a:last-of-type{
+    background-color:var(--mainColor);
+    color: #fff;
+}
+
+@media (max-width:992px){
+
+    .nav {
+        display: none;
+    }
+
+}
