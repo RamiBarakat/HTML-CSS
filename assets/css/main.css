@@ -72,8 +72,305 @@
         display: none;
     }
 
+
+    .container{
+        width:calc(100% - 40px);
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width:400px) {
+    /* .container{
+        width:calc(100% - 20px);
+        margin: auto;
+    } */
+
+    .logo a{
+        display: none;
+    }
 }
 /* end header */
+
+/* Start hero */
+.hero {
+    margin-top: 95px;
+    height: 80vh;
+    
+}
+
+.hero-text{
+    width: calc( (100% - 50px) / 2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero .hero-text .begin {
+    color: #545BE8;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.hero .hero-text .begin span{
+    font-weight: 700;
+}
+
+.hero .hero-text h1{
+    color: #141E32;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.hero .hero-text h1 span{
+    color: #545BE8;
+
+}
+
+.hero .hero-text p {
+    color: #969696;
+    font-family: Poppins;
+    font-size: 7.413px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.hero .hero-text .row{
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.hero .hero-text .row .reg{
+    padding: 5px 20px;
+    color: #fff;
+    background-color: var(--mainColor);
+    border-radius: 5px
+}
+.hero .play{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero .hero-end {
+    width: calc( (100% - 50px) / 2);
+    height: 400px;
+}
+/* End hero */
+
+
+/*Start About */
+
+.about .about-text {
+    padding: 15px 0;
+    width:calc( (100% - 30px) / 3);
+}
+
+.about .row{
+    gap:15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about .about-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 15px;
+    
+}
+.about .about-text h3{
+    color: #545BE8;
+    font-size: 10px;
+    font-weight: 400;
+    word-wrap: break-word;
+
+}
+
+
+.about .about-text h2{
+    color: #141E32;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.about .about-text p{
+    color: #969696;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.about .about-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: flex-start;
+    width:calc( (100% - 65px) / 2);
+    flex-grow: 1;
+}
+
+.about .about-cards .card-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:20px;
+    border-radius: 10px;
+    width:calc( (100% - 50px) / 3);
+    background-color: var(--mainColor);
+    padding: 20px 8px;
+}
+
+.about .about-cards .card-info img {
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    background-color: #fff;
+
+}
+
+.about .about-cards .card-info h2 {
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.36px;
+    word-wrap: break-word;
+}
+
+.about .about-cards .card-info p{
+    color: #DDDDDD;
+    font-size: 10px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.about .about-nav-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    padding-right: 20px;
+}
+
+
+.about .about-nav-buttons img{
+    padding: 5px;
+    background-color: #F0C932;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.about .about-nav-buttons img:hover{
+    background-color: #21201d;
+}
+
+/* End About */
+
+/* Start Courses */
+.courses {
+    padding: 40px 0;
+    
+}
+
+.courses .row {
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.course-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: calc( (100% - 30px) / 2 );
+
+}
+
+.course {
+    width: calc( (100% - 20px) / 2 );
+    box-shadow: 0px 8.237px 8.237px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px 0;
+}
+
+.course-card{
+    position: relative;
+}
+
+.course-details {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.course-details .row{
+    justify-content: space-around;
+}
+
+.course-details .row:first-of-type span {
+    color: var(--mainColor)
+}
+
+.course-details .row:last-of-type{
+    justify-content: flex-start;
+}
+
+
+.course-description {
+    width: calc( (100% - 30px) / 2 );
+
+}
+
+
+.course-card img {
+    filter:brightness(60%);
+    width: 100%;
+    
+}
+
+
+.course-info{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.course-info span:first-of-type {
+    background-color: var(--mainColor);
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+
+.course-info span:last-of-type{
+    color: #fff;
+    align-self: flex-end;
+    padding: 10px;
+}
 
 
 /* start testominals */
@@ -89,6 +386,7 @@
 
 .testimonials .row{
     gap:40px;
+    flex-direction: row;
 }
 
 .testimonial {
@@ -98,12 +396,24 @@
     flex-wrap: wrap;
     gap: 20px;
     width:calc( (100% - 40px) / 2 );
+    /* width:400px;
+    flex-grow: 1;
+    flex-basis: 400px;
+    width: 600px; */
     align-items: flex-start;
     box-shadow: 0px 8.237px 8.237px 0px rgba(0, 0, 0, 0.10);
     padding: 20px;
     position: relative;
 
 }
+/* flex-basis is width when father --> flex directiom row --> when change to column --> height */
+
+@media (min-width: 400px) and (max-width:900px) {
+    .testimonials .row{
+         flex-direction: column;  /*width becomes 600 */
+    }
+}
+
 
 .testimonial:after {
     content: '';
@@ -170,6 +480,18 @@
 }
 
 
+@media (max-width: 992px){
+
+    .testimonial {
+        width:100%;
+    }
+
+    .testimonial blockquote p{
+        font-size: 14px;
+    }
+}
+
+
 /* end testominals */
 /* Start Footer*/
 .footer{
@@ -188,12 +510,12 @@
 } 
 
 
-/* 40px from the gap */
+/* 40px from the gap
 .footer .footer-start,
 .footer .footer-end
 {
     width: calc((100% - 40px) / 2); 
-}
+} */
 
 
 .footer .footer-start{
@@ -201,6 +523,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
+    flex-basis: 400px;
+    flex-grow: 1;
 }
 
 
@@ -242,6 +566,10 @@
 
 /* footer right side */
 
+.footer-end {
+    flex-grow: 1;
+}
+
 .footer-end .row{
     justify-content: space-evenly;
     align-items: flex-start;
@@ -260,4 +588,11 @@
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+@media (max-width:400px){
+    .footer-end {
+        text-align: center;
+        align-items: center;
+    }
 }
