@@ -166,6 +166,9 @@
 
 
 /*Start About */
+.about{
+    margin-top: 5px;
+}
 
 .about .about-text {
     padding: 15px 0;
@@ -279,6 +282,36 @@
 }
 
 /* End About */
+
+/* Start stats */
+
+.stats{
+    margin-top: 10px;
+    padding: 60px;
+    background: linear-gradient(#545BE8 100%, #272DB0 100%);
+    width: 100%;
+    
+}
+
+
+
+.stats .stats-img{
+    width: calc( (100% - 20px) / 2 );
+    
+}
+
+.stats .stats-img img{
+    width: 60%;
+    height: 80%;
+    padding-left: 40px;
+}
+
+
+.stats .stats-text {
+    width: calc( (100% - 20px) / 2 );
+
+}
+/* End stats */
 
 /* Start Courses */
 .courses {
