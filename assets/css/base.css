@@ -34,8 +34,10 @@ a{
 }
 
 ul {
-    list-style: none;
+    list-style: none; 
 }
+
+/*shift+alt+arrow down*/
 
 .active {
     font-weight: 900;
